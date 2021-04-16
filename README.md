@@ -11,28 +11,17 @@
 ## How to use utility?
 To encrypt the file use `encrypt filename encr_mode args`
 
-* Possible encryption mode:
-<<<<<<< HEAD
+* Possible `encr_mode`:
 1) `caesar`, where `args = int key`
 2) `vigenere`, where `args = str key`
 3) `vernam`, where `args = str key`
-=======
-1) `caesar`, where `args = int shift`
-2) `vigenere`, which is not implemented yet
-3) `vernam`, which is not implemented too
->>>>>>> 40357009186363dca4d65e329a1a76d181caf294
 
 To decrypt the file use `decrypt filename decr_mode args`
 
-* Possible decryption mode:
-1) `caesar`, where `args = [int shift]`
-<<<<<<< HEAD
-    If no shift passed, breaking a cipher begins in the assumption of an English text 
+* Possible `decr_mode`:
+1) `caesar`, where `args = [int key]`
+    If no `key` passed, breaking a cipher begins in the assumption of an English text 
 2) `vigenere`, where `args = str key`
 3) `vernam`, where `args = str key`
-=======
-2) `vigenere`, which is not implemented yet
-3) `vernam`, which is not implemented too
->>>>>>> 40357009186363dca4d65e329a1a76d181caf294
 
 To exit use `exit`

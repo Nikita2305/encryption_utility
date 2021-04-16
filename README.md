@@ -12,15 +12,16 @@
 To encrypt the file use `encrypt filename encr_mode args`
 
 * Possible encryption mode:
-1) caesar, where `args = int shift`
-2) vigenere, which is not implemented yet
-3) vernam, which is not implemented too
+1) `caesar`, where `args = int key`
+2) `vigenere`, where `args = str key`
+3) `vernam`, where `args = str key`
 
 To decrypt the file use `decrypt filename decr_mode args`
 
-* Possible encryption mode:
-1) caesar, where `args = [int shift]`
-2) vigenere, which is not implemented yet
-3) vernam, which is not implemented too
+* Possible decryption mode:
+1) `caesar`, where `args = [int shift]`
+    If no shift passed, breaking a cipher begins in the assumption of an English text 
+2) `vigenere`, where `args = str key`
+3) `vernam`, where `args = str key`
 
 To exit use `exit`

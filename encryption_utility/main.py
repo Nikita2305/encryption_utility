@@ -9,8 +9,8 @@ def user_loop():
         "exit": exit,
         "wrong_query": wrong_query
     }
-    while (getActive()):
-        print("Waiting for query:")
+    while (is_active()):
+        print("Waiting for the query:")
         query_string = ' '.join(input().split())
         query_arr = query_string.split()
         query = query_arr[0]
@@ -18,8 +18,8 @@ def user_loop():
         if (not (query in commands.keys())):
             query = "wrong_query"
             args = [commands.keys()]
-        commands[query](*args)
+        response = commands[query](*args)
+        print_response(response)
         print()
-    print("Thank you for using our app!")
 
 user_loop()

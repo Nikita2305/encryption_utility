@@ -2,7 +2,6 @@ is_active = True
 default_file_name = "DEFAULT_FILE_NAME"
 default_mod = "DEFAULT_CRYPTO_MOD" 
 utf8_module = 0x10FFFF + 1
-
  
 
 def set_active(active):

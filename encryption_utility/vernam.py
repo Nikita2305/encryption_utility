@@ -1,4 +1,4 @@
-from config import *
+from encryption_utility.config import *
 local_vernam_module = 2 ** 20
 
 

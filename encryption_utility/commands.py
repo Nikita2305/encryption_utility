@@ -1,7 +1,7 @@
-from config import *
-from caesar import *
-from vigenere import *
-from vernam import *
+from encryption_utility.config import *
+from encryption_utility.caesar import *
+from encryption_utility.vigenere import *
+from encryption_utility.vernam import *
 
 
 def wrong_encryption_mod_error(mods):

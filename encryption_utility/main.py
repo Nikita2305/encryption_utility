@@ -1,5 +1,5 @@
-from config import *
-from commands import *
+from encryption_utility.config import *
+from encryption_utility.commands import *
 
 
 def user_loop():

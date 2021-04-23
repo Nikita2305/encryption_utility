@@ -1,4 +1,4 @@
-from config import *
+from encryption_utility.config import *
 
 def vigenere_encrypt(filename, *args):
     option_1 = check_arguments(args, str)

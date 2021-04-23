@@ -1,5 +1,5 @@
-from config import *
-from frequency_analysis import *
+from encryption_utility.config import *
+from encryption_utility.frequency_analysis import *
 import os
 import random
 

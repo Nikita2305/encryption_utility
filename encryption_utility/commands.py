@@ -2,7 +2,7 @@ from encryption_utility.config import *
 from encryption_utility.caesar import *
 from encryption_utility.vigenere import *
 from encryption_utility.vernam import *
-
+from encryption_utility.block import *
 
 def wrong_encryption_mod_error(mods):
     return Response(False, "There is no such encryption mod.\nPossible are: " + ", ".join(mods))
@@ -14,7 +14,8 @@ def encrypt(filename = default_file_name, encryption_mod = default_mod, *args):
     encrypt_mods = {
         "caesar": caesar_encrypt,
         "vigenere": vigenere_encrypt,
-        "vernam": vernam_encrypt
+        "vernam": vernam_encrypt,
+        "block": block_encrypt
     } 
     try:
         target_file = open(filename, "r+")
@@ -29,7 +30,8 @@ def decrypt(filename = default_file_name, decryption_mod = default_mod, *args):
     decrypt_mods = {
         "caesar": caesar_decrypt,
         "vigenere": vigenere_decrypt,
-        "vernam": vernam_decrypt
+        "vernam": vernam_decrypt,
+        "block": block_decrypt
     } 
     try:
         target_file = open(filename, "r+")

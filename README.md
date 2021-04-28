@@ -12,17 +12,19 @@
 To encrypt the file use `encrypt filename encr_mode args`
 
 * Possible `encr_mode`:
-1) `caesar`, where `args = int key`
+1) `caesar`, where `args = unsigned_int key`
 2) `vigenere`, where `args = str key`
 3) `vernam`, where `args = str key`
+4) `block`, where `args = unsigned_int key`
 
 To decrypt the file use `decrypt filename decr_mode args`
 
 * Possible `decr_mode`:
-1) `caesar`, where `args = [int key]`
+1) `caesar`, where `args = [unsigned_int key]`
     * If no `key` passed, breaking a cipher begins in the assumption of an English text 
 2) `vigenere`, where `args = str key`
 3) `vernam`, where `args = str key`
+4) `block`, where `args = unsigned_int key`
 
 To exit use `exit`
 

@@ -1,30 +1,11 @@
 # Encryption utility
-## How to run project?
+
+## How to run the bot?
 * Clone this repo and change directory to there (e.g. `cd encryption_utility`)
-* Make environment for python3 (e.g. `python3 -m venv env`)
-* Activate environment (e.g. `source env/bin/activate`)
+* Set up environment:  pipenv install python-telegram-bot
 * Change local environment pythonpath: export PYTHONPATH=${PYTHONPATH}:\`pwd\`
-* In order to install modules - run `pip install requirements.txt`
-* To run the project - execute `python3 encryption_utility/main.py`
+* Run the bot: `pipenv run python encryption_utility/bot.py`
 
-
-## How to use utility?
-To encrypt the file use `encrypt filename encr_mode args`
-
-* Possible `encr_mode`:
-1) `caesar`, where `args = unsigned_int key`
-2) `vigenere`, where `args = str key`
-3) `vernam`, where `args = str key`
-4) `block`, where `args = unsigned_int key`
-
-To decrypt the file use `decrypt filename decr_mode args`
-
-* Possible `decr_mode`:
-1) `caesar`, where `args = [unsigned_int key]`
-    * If no `key` passed, breaking a cipher begins in the assumption of an English text 
-2) `vigenere`, where `args = str key`
-3) `vernam`, where `args = str key`
-4) `block`, where `args = unsigned_int key`
-
-To exit use `exit`
-
+## How to use the bot?
+* To stop the bot: use `Ctrl + C` in your terminal.
+* For another info: use `/help` in telegram chat.

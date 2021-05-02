@@ -35,7 +35,6 @@ class Response:
         self._value = value
 
 def print_response(response):
-    print()
     ret = ("COMLETED with response:\n" if response.success else "FAILED with error:\n") + response.value
     print(ret)
 

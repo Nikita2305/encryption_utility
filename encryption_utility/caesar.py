@@ -51,7 +51,7 @@ def caesar_decrypt(filename, *args):
                 if (diff < best_diff):
                     best_diff = diff
                     best_shift = shift
-        transcription_filename = filename + ".scrp"
+        transcription_filename = filename
         with open(transcription_filename, "w") as transcr_file:
             transcr_file.write(data)
         caesar_encrypt(transcription_filename, str(best_shift))
